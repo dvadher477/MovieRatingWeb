@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .bn {
+            border: 2px solid gold;
+            background: transparent;
+            color: gold;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class="row justify-content-between">
+            <div class="mb-5 col">
+                <div class="mb-4 display-4 font-weight-bold">Mission: Impossible - Ghost Protocol</div>
+                <div class="text-gray-400">
+                    <ul class="list-inline">
+                        <li class="list-inline-item mr-3">2011</li>
+                        <li class="list-inline-item mr-3">|</li>
+                        <li class="list-inline-item">133 Min</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-5 col">
+                <div class="h1">
+                    <ul class="d-flex">
+                        <li><span class="text-warning pb-2">★</span></li>
+                        <li>7.1</li>
+                        <li><span class="text-muted mr-4">/10</span></li>
+                        <li><span class="text-primary">Rate</span></li>
+                        <li><span class="text-primary">☆</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex mb-3">
+            <img class='img-fluid mr-4' style='height: 380px; width: 240px; object-fit: cover; object-position: top;' src="~/images/mi_gp.jpg" alt="Poster" />
+            <img class='img-fluid' style='height: 380px; width: max-content; object-fit: cover; object-position: top;' src="~/images/JW2.jpg" alt="Backdrop" />
+        </div>
+
+        <div class="mb-4">
+            <button class="bn">Action</button>
+            <button class="bn">Thriller</button>
+            <button class="bn">Crime</button>
+        </div>
+        <div class='row'>
+            <div class='col-9'>
+                <div>
+                    <div class='font-weight-bold h4'>
+                        Overview :
+                    </div>
+                    <div class="mb-4">
+                        Ethan Hunt and his team are racing against time to track down a dangerous terrorist named Hendricks, who has gained access to Russian nuclear launch codes and is planning a strike on the United States. An attempt to stop him ends in an explosion causing severe destruction to the Kremlin and the IMF to be implicated in the bombing, forcing the President to disavow them. No longer being aided by the government, Ethan and his team chase Hendricks around the globe, although they might still be too late to stop a disaster.
+                    </div>
+                    <div>
+                        <hr />
+                        <div class='my-2 d-flex'>
+                            <div class='font-weight-bold mr-2'>
+                                Director:
+                            </div>
+                            <div>
+                                J.J. Abrams
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='my-2 d-flex'>
+                            <div class='font-weight-bold mr-2'>
+                                Cast :
+                            </div>
+                            <div class=''>
+                                Tom Cruise
+                                Paula Patton
+                                Simon Pegg
+                                Jeremy Renner
+                                Michael Nyqvist
+                                Vladimir Mashkov
+                                Samuli Edelmann
+                            </div>
+                        </div>
+                        <hr />
+                        <div class='my-2 d-flex'>
+                            <div class='font-weight-bold mr-2'>
+                                Tag Line :
+                            </div>
+                            <div class=''>
+                                No plan. No backup. No choice.
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <div class='col-3 border-left'>
+                <div>
+                    <div class='font-weight-bold h5'>
+                        Status
+                    </div>
+                    <div class='text-primary'>
+                        Released
+                    </div>
+                </div>
+                <div>
+                    <div class='font-weight-bold h5'>
+                        Original Language
+                    </div>
+                    <div class='text-primary'>
+                        English
+                    </div>
+                </div>
+                <div>
+                    <div class='font-weight-bold h5'>
+                        Release Date
+                    </div>
+                    <div class='text-primary'>
+                        2011-12-07
+                    </div>
+                </div>
+                <div>
+                    <div class='font-weight-bold h5'>
+                        Runtime
+                    </div>
+                    <div class='text-primary'>
+                        133 min
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='position-relative mt-5' style='width: 75%;'>
+            <div class='d-flex align-items-center mb-4'>
+                <div class="border-left border-warning pl-2">
+                    <span class="font-weight-bold h3">Reviews</span>
+                    <span class="ml-1">></span>
+                </div>
+                <div class='position-absolute' style='right: 0;'>
+                    <button class='btn btn-primary'>Give Review</button>
+                </div>
+            </div>
+            <div class='mb-4'>
+                <div class='d-flex'>
+                    <div class='p-4 bg-warning rounded-circle text-center mr-4' style='height: 50px; width: 50px;'>
+                        F
+                    </div>
+                    <div>
+                        <div class='font-weight-bold h5'>
+                            Floch Forster
+                        </div>
+                        <div class='text-muted mb-3'>
+                            January 7, 2024
+                        </div>
+                    </div>
+                </div>
+                <div class='d-flex mb-3'>
+                    @for (var i = 0; i < 10; i++)
+                    {
+                        <span class="text-warning">★</span>
+                    }
+                </div>
+                <div>
+                    He was the best guy around
+                    <hr />
+                </div>
+            </div>
+            <div class='mb-4'>
+                <div class='d-flex'>
+                    <div class='p-4 bg-dark rounded-circle text-center mr-4' style='height: 50px; width: 50px;'>
+                        R
+                    </div>
+                    <div>
+                        <div class='font-weight-bold h5'>
+                            Reiner Braun
+                        </div>
+                        <div class='text-muted mb-3'>
+                            January 8, 2024
+                        </div>
+                    </div>
+                </div>
+                <div class='d-flex mb-3'>
+                    @for (var i = 0; i < 5; i++)
+                    {
+                        <span class="text-warning">★</span>
+                    }
+                    @for (var i = 0; i < 5; i++)
+                    {
+                        <span class="text-muted">☆</span>
+                    }
+                </div>
+                <div>
+                    What about the people he.....?
+                    <hr />
+                </div>
+            </div>
+            <div class='d-flex justify-content-center'>
+                <button class='btn btn-primary'>Show More</button>
+            </div>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>

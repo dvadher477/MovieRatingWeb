@@ -1,0 +1,67 @@
+﻿@model MovieRatingWeb.Models.UserModel
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/newFile.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-dsiAopxH8C0+fqPo5kRld0rAq6Lqz6g4ls4cwqsQ5T2u8hLOUq6XqUVCYbANtbEwS/ogQ1Rbvv3y/6dP3W2pDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-transparent text-white p-4">
+                    <h2 class="text-center mb-5" style="font-size: 55px"><b>LOGIN</b></h2>
+                    @{
+                        if (ViewBag.Message != null)
+                        {
+                            <p style="color:red">@ViewBag.Message</p>
+                        }
+                    }
+                    <form method="post">
+                        <div class="mb-3 position-relative text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="position-absolute left-0 top-50 transform translate-middle text-yellow fas fa-envelope"></i>
+                                <input asp-for="UserEmail" placeholder="Email" type="email" id="email" class="form-control bg-transparent border border-2 rounded text-white w-75 text-center" />
+                            </div>
+                        </div>
+                        <div class="mb-3 position-relative text-center">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="position-absolute left-0 top-50 transform translate-middle text-yellow fas fa-lock"></i>
+                                <input asp-for="UserPassword" placeholder="Password" type="password" id="password"class="form-control bg-transparent border border-2 rounded text-white w-75 text-center" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3 form-check text-center">
+                            <input type="checkbox" id="remember" name="remember" class="form-check-input" />
+                            <label for="remember" class="form-check-label text-sm">Remember me</label>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <p class="text-sm">Don't Have any Account? 
+                                <a asp-controller="Movie" asp-action="SignUp" class="nav-link text-decoration-none text-yellow" style="color: blue">Sign Up</a>
+                            </p>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-warning w-25 mb-lg-5"><b>Login</b></button>
+                        </div>
+                    </form>
+                    <hr class="my-4 border border-gray" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

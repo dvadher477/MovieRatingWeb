@@ -1,0 +1,32 @@
+﻿@model MovieRatingWeb.Models.UserModel
+
+<div style="color:black">
+    <h4>User ID: @Model.UserId</h4>
+    <h4>User Name: @Model.UserName</h4>
+    <h4>User Email: @Model.UserEmail</h4>
+
+    @if (Model.Comments != null && Model.Comments.Any())
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>Comment Text</th>
+                    <th>Posted At</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var comment in Model.Comments)
+                {
+                    <tr>
+                        <td>@comment.Text</td>
+                        <td>@comment.PostedAt</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No comments available.</p>
+    }
+</div>
